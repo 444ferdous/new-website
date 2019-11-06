@@ -1,0 +1,311 @@
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family: sans-serif;
+	padding: 0px;
+	margin:0px;
+}
+
+.main{
+	padding: 2px;
+	margin:1px solid #000000;
+}
+.clearFix{
+	clear: both;
+}
+.button1{
+	padding: 10px 25px;
+	cursor: pointer;
+	background-color: #37909e;
+	color:#ffffff;
+	border:2px solid #1d737f;
+	border-radius: 3px;
+}
+.button1:hover{
+	background-color: #145a65;
+}
+
+/*Header Section Start*/
+
+
+.header{
+	position: relative;
+}
+.header img{
+	width: 100%;
+}
+.header .title{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top:10px;
+	text-align: center;
+	font-size: 80px;
+}
+.header .title div{
+	display: inline-block;
+	margin: 0px auto;
+	color:black;
+	background-color: #FFFFFF6b;
+	padding: 0px 10px;
+	border-radius: 10px;
+}
+
+/*Header Section End*/
+
+
+/*Mainmenu Section Start*/
+
+.mainmenu{
+	display: block;
+	width: 100%;
+	background-color: #37909e;
+}
+.mainmenu>ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+.mainmenu>ul>li{
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+.mainmenu>ul>li>a{
+	color:#FFFFFF;
+	display:block;
+	line-height: 40px;
+	padding: 0px 20px;
+	transition: all 0.5s;
+}
+.mainmenu>ul>li:hover>a{
+	cursor: pointer;
+	background-color: #0b6573;
+	padding: 0px 25px;
+}
+.mainmenu>ul>li:hover .submenu{
+	display: block!important;
+}
+
+
+/*Sub Menu*/
+
+.submenu{
+	display: none!important;
+	z-index: 2;
+	top: 40px;
+	list-style-type: none;
+	position: absolute;
+	display: block;
+	width: 100%;
+	background-color: #37909e;
+	margin: 0px;
+	padding: 0px;
+}
+.submenu>li{
+	
+}
+.submenu>li>a{
+	text-align: center;
+	display: block;
+	width: 100%;
+	line-height: 35px;
+	color:#FFFFFF;
+}
+.submenu>li>a:hover{
+	background-color: #0b6573;
+}
+
+/*Sub Menu End*/
+
+
+/*Mainmenu Section End*/
+
+
+/*Container Section Start*/
+
+.container{
+	z-index: 0;
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+}
+.container .navigation{
+	padding: 5px;
+	background-color: #147382;
+	width:20%;
+	float: left;
+	display: inline-block;
+	color:#FFFFFF;
+}
+.container .navigation ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+.container .navigation ul li{
+	display:block;
+	width: 100%;
+}
+.container .navigation ul li a{
+	display: block;
+	line-height: 40px;
+	padding: 0px 20px;
+	transition: all 0.5s;
+	color:#FFFFFF;
+}
+.container .navigation ul li a:hover{
+	cursor: pointer;
+	background-color: #dedede;
+	padding: 0px 25px;
+	color:green;
+}
+
+
+.container .maincontent{
+	padding: 5px;
+	width:79%;
+	float: right;
+	display: inline-block;
+}
+
+
+/*Container Section End*/
+
+
+
+/*Footer Section Start*/
+
+.footer{
+	margin-top: 10px;
+	background-color: #39919d;
+	width: 100%;
+	display: block;
+}
+.footer .copyright{
+	line-height: 40px;
+	color:#FFFFFF;
+	text-align: center;
+}
+/*Footer Section end*/
+
+
+/*Article section Start*/
+
+.article{
+	border:2px solid #39919d;
+	border-radius: 10px;
+}
+.article .articleTitle{
+	padding:5px;
+	position: relative;
+}
+.article .articleTitle .articleTitleHolder {
+	position: absolute;
+	top: -10px;
+	left:15px;
+	background-color: #FFFFFF;
+	padding: 0px 5px;
+	font-size: 20px;
+	color:#166875;
+	font-weight: bold;
+	z-index: 1;
+}
+.article .articleContent{
+	padding:10px;
+}
+.article .articleContent form{
+	color:#166875;
+}
+.article .articleContent form h4{
+	padding: 5px 0PX;
+	margin:0px;
+	font-weight: normal;
+}
+.article .articleContent form input{
+	width: 90%;
+	display: block;
+	line-height: 35px;
+	padding: 0px 10px;
+	border-radius: 5px;
+	border:1px solid #989292;
+}
+.article .articleContent form textarea{
+	width: 90%;
+	display: block;
+	padding: 0px 10px;
+	border-radius: 5px;
+	border:1px solid #989292;
+}
+/*.articleContent{
+	border:2px solid black;
+}
+*/
+/*Article section End*/
+
+
+
+/*Grid Style Section Start*/
+
+.col-1{
+	width: 100%;
+	display: block;
+}
+.col-2{
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+/*Grid Style Section End*/
+
+
+
+
+
+/*Responsive Design Section*/
+
+@media only screen and (max-width:750px){
+
+	.header .title{
+		font-size: 40px;
+	}
+
+
+}
+
+@media only screen and (max-width:600px){
+
+	.header .title{
+		font-size: 30px;
+	}
+	.navigation{
+		width: 0px!important;
+		display: none!important;
+	}
+	.maincontent{
+		width: 100%!important;
+		display: block;
+		float: initial;
+	}
+	.col-2{
+		width: 100%;
+		float: initial;
+		display: block;
+	}
+
+
+}
+
+/*Responsive Design Section End*/
+
+
+.menuToggleButton{
+	display: inline-block;
+	color:#068a9c;
+	float: right;
+	cursor: pointer;
+}
